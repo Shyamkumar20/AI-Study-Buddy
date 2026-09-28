@@ -1,0 +1,127 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #0b0f19;
+    --bg-secondary: #111827;
+    --border-color: rgba(255, 255, 255, 0.08);
+  }
+
+  body {
+    margin: 0;
+    background: #0b0f19;
+    color: #f8fafc;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+html.theme-light {
+  --bg-primary: #f8fafc;
+  --bg-secondary: #ffffff;
+  --border-color: rgba(15, 23, 42, 0.12);
+}
+
+html.theme-light .app-theme {
+  background-color: #f8fafc !important;
+  color: #0f172a;
+}
+
+html.theme-light .app-theme .bg-slate-950,
+html.theme-light .app-theme .bg-slate-950\/60,
+html.theme-light .app-theme .bg-slate-950\/40,
+html.theme-light .app-theme .bg-slate-950\/80 {
+  background-color: #f8fafc !important;
+}
+
+html.theme-light .app-theme .bg-slate-900,
+html.theme-light .app-theme .bg-slate-900\/60,
+html.theme-light .app-theme .bg-slate-900\/80,
+html.theme-light .app-theme .bg-slate-900\/95,
+html.theme-light .app-theme .bg-slate-900\/50 {
+  background-color: #ffffff !important;
+}
+
+html.theme-light .app-theme .bg-slate-800,
+html.theme-light .app-theme .bg-slate-800\/60,
+html.theme-light .app-theme .bg-slate-800\/40 {
+  background-color: #e2e8f0 !important;
+}
+
+html.theme-light .app-theme .text-white,
+html.theme-light .app-theme .text-slate-100,
+html.theme-light .app-theme .text-slate-200 {
+  color: #0f172a !important;
+}
+
+html.theme-light .app-theme .text-slate-300,
+html.theme-light .app-theme .text-slate-400 {
+  color: #475569 !important;
+}
+
+html.theme-light .app-theme .text-slate-500 {
+  color: #64748b !important;
+}
+
+html.theme-light .app-theme .border-slate-800,
+html.theme-light .app-theme .border-slate-800\/80,
+html.theme-light .app-theme .border-slate-800\/60,
+html.theme-light .app-theme .border-slate-700,
+html.theme-light .app-theme .border-slate-700\/60 {
+  border-color: #cbd5e1 !important;
+}
+
+html.theme-light .app-theme .hover\:bg-slate-800:hover {
+  background-color: #e2e8f0 !important;
+}
+
+html.theme-light .app-theme .hover\:text-white:hover {
+  color: #0f172a !important;
+}
+
+/* Custom modern scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.2);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.4);
+}
+
+/* Glassmorphism utilities */
+.glass-panel {
+  background: rgba(17, 24, 39, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-light {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+/* 3D card flip effects for flashcards */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
