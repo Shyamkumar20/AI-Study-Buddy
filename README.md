@@ -20,11 +20,11 @@ npm install
 ### 2. Create `.env` file
 ```env
 PORT=5000
-MONGO_URI=mongodb://localhost:27017/ai-studybuddy
+MONGO_URI=mongodb://****
 CLIENT_URL=http://localhost:3000
 JWT_ACCESS_SECRET=your_access_secret_here
 JWT_REFRESH_SECRET=your_refresh_secret_here
-GEMINI_API_KEY=AQ.Ab8RN6KtOAsPANA54OWBq0kWsiffkDaKrs_lGPQOcTrIeezDQg
+GEMINI_API_KEY=CONFIDENTIAL
 GEMINI_MODEL=gemini-3.8-flash
 NODE_ENV=development
 ```
